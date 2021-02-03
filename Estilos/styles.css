@@ -1,0 +1,36 @@
+  body  {
+    color: #212121;
+  }
+  a{
+    color: #212121;
+  }
+  .titulo {
+    font-size: 6rem;
+  }
+  .imagenGrimm {
+
+  }
+  html  {
+    font-size: 62.5%;
+  }
+
+  details {
+    font-size: 1.4rem;
+    font-weight: bold;
+  }
+
+  details ol {
+    font-weight: initial;
+  }
+
+  p {
+    font-size: 1.6rem;
+  }
+
+  h2{
+    font-size: 3.6rem;
+  }
+
+  h3 {
+    font-size: 2.4rem;
+  }
