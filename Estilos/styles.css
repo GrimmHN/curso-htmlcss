@@ -1,23 +1,61 @@
-  body  {
-    color: #212121;
+/* @font-face{
+  font-family: charter;
+  src: url('../fonts/charter-regular.otf');
+  font-style: normal;
+  font-weight: 400;
+}
+
+@font-face{
+  font-family: charter;
+  src: url('../fonts/charter-italic.otf');
+  font-style: italic;
+  font-weight: 400;
+}
+
+@font-face{
+  font-family: charter;
+  src: url('../fonts/charter-bold.otf');
+  font-style: normal;
+  font-weight: 700;
+}
+
+@font-face{
+  font-family: charter;
+  src: url('../fonts/charter-bold-italic.otf');
+  font-style: italic;
+  font-weight: bold;
+} */
+
+
+:root{
+  --gris30: #212121;
+  --gris20: #212429;
+  --gris10: #616161;
+    font-size: 62.5%;
+    font-family: 'Roboto', sans-serif;
   }
-  a{
-    color: #212121;
+
+  details{
+  color: var(--gris10);
+  font-weight: bold;
+  font-size: 1.4rem;
+}
+body{
+  color: var(--gris30);
+  font-family: roboto;
+}
+  header a{
+  color: var(--gris10);
+  text-decoration: none;
+}
+  header a:hover{
+    color:var(--gris30)
   }
+
   .titulo {
     font-size: 6rem;
   }
-  .imagenGrimm {
 
-  }
-  html  {
-    font-size: 62.5%;
-  }
-
-  details {
-    font-size: 1.4rem;
-    font-weight: bold;
-  }
 
   details ol {
     font-weight: initial;
@@ -29,6 +67,7 @@
 
   h2{
     font-size: 3.6rem;
+
   }
 
   h3 {
