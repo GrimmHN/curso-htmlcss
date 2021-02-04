@@ -73,3 +73,12 @@ body{
   h3 {
     font-size: 2.4rem;
   }
+
+  .imagenDom {
+    width: 500px;
+    height: 300px;
+  }
+  .imagenCss {
+    width: 500px;
+    height: 300px;
+  }
