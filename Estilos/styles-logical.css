@@ -1,0 +1,257 @@
+/* @font-face{
+  font-family: charter;
+  src: url('../fonts/charter-regular.otf');
+  font-style: normal;
+  font-weight: 400;
+}
+
+@font-face{
+  font-family: charter;
+  src: url('../fonts/charter-italic.otf');
+  font-style: italic;
+  font-weight: 400;
+}
+
+@font-face{
+  font-family: charter;
+  src: url('../fonts/charter-bold.otf');
+  font-style: normal;
+  font-weight: 700;
+}
+
+@font-face{
+  font-family: charter;
+  src: url('../fonts/charter-bold-italic.otf');
+  font-style: italic;
+  font-weight: bold;
+} */
+
+
+h1{
+  font-weight: normal;
+  margin-block-start: 64px;
+  margin-block-end: 16px;
+  display: inline-block;
+}
+
+
+:root{
+  --white30: white;
+  --white20: #A5A3A5;
+  --white10: #3A3539;
+    font-size: 62.5%;
+    font-family: 'Nunito', sans-serif;
+    /* font-family: 'Roboto', sans-serif; */
+  }
+
+  details{
+  color: var(--white10);
+  font-weight: bold;
+  font-size: 1.4rem;
+}
+  body{
+  margin: 0;
+  color: white;
+  font-family: 'Nunito', sans-serif;
+}
+header a{
+  color: var(--white20);
+  text-decoration: none;
+}
+header a:hover{
+  color:var(--gris30)
+}
+
+.titulo {
+  font-size: 6.4rem;
+}
+
+
+details ol {
+  font-weight: initial;
+}
+
+p {
+  font-size: 1.7rem;
+  color: var(--white20);
+}
+
+h2{
+  font-size: 4rem;
+  /* text-decoration: none; */
+  font-weight: bold;
+  margin-block-end: 40px;
+}
+
+h3 {
+  font-size: 3.2rem;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+/* .imagenDom {
+  width: 500px;
+  height: 300px;
+}
+.imagenCss {
+  width: 500px;
+  height: 300px;
+} */
+
+pre{
+  background-color: var(--white10);
+  padding: 40px;
+  line-height: 24px;
+  font-size: 16px;
+  border-radius: 8px;
+  font-family: 'Nunito';
+}
+
+.hero{
+  height: 350px;
+  background: linear-gradient(96.07deg, #314755 30.63%, #26A0DA 102.18%);
+  /* background-image:linear-gradient(to top, rgba(255, 255, 255, .3), transparent), url('../imagenes/patron-1.png'); */
+  width: 100%;
+  position: relative;
+}
+
+.section-content{
+  counter-reset: titleList;
+}
+
+.section-content h3{
+  counter-increment: titleList;
+}
+
+h3::before{
+  content: counter(titleList) '. ';
+}
+/* h3::after{
+  content: '';
+  width: 32px;
+  height: 4px;
+  background: #424242;
+  display: inline-block; */
+}
+
+h3 a {
+  text-decoration: none;
+  color: var(--gris20);
+}
+html{
+  background: #251F24;
+}
+summary{
+  color: #FFFFFF
+}
+blockquote{
+  background-color: var(--white10);
+  border-radius: 8px;
+  padding-inline-start: 24px;
+  padding-block-start: 24px;
+  padding-block-end: 24px;
+  /* display: block; */
+  padding-inline-end: 24px;
+  line-height: 32px;
+  font-size: 24px;
+}
+details li{
+  color: var(--white20);
+}
+
+
+.wrapper{
+  /* border: 1px solid red; */
+  max-inline-size: 902px;
+  margin: auto;
+
+}
+.main{
+  /* border: 1px solid yellow; */
+}
+.main-content{
+  /* display: inline-block; */
+  inline-size: 636px;
+  /* border: 1px solid green; */
+  padding: 16px;
+  margin-inline-start: 133px;
+  /* margin-inline-end: */
+}
+main{
+  /* border: 1px solid red; */
+}
+img{
+  max-inline-size: 100%;
+  margin-block-start: 16px;
+  display: block;
+}
+hr{
+  margin-block-start: 40px;
+  margin-block-end: 40px;
+  border: 1px solid rgba(97, 97, 97, 0.2);
+}
+li{
+  font-size: 1.4rem;
+  line-height: 24px;
+}
+blockquote p{
+  font-size: 2.4rem;
+  /* border-radius: 8px; */
+  color: #FFFFFF;
+  /* display: block; */
+  margin-block-start: 0px;
+  margin-block-end: 0px;
+}
+blockquote p span::before {
+  content: '- ';
+  /* display: block; */
+}
+blockquote p span{
+  margin-block-start: 16px;
+  display: block;
+  /* border: 1px solid red; */
+}
+/* header{
+  position: relative;
+} */
+
+
+nav{
+  /* position: fixed;
+  left: 177px;
+  top: 100px; */
+  /* inline-size: 177px; */
+}
+.header-content{
+  position: relative;
+}
+.header-postion{
+  position: sticky;
+  top:0px;
+}
+header{
+ /* color: #FFFFFF */
+ /* display: inline-block;
+ top:0px; */
+ margin-block-start: 64px;
+ position: absolute;
+ inline-size: 188px;
+inset-inline-start: 200px;
+}
+header li{
+  margin-block-start: 16px;
+}
+.textoContenido{
+  color: #FFFFFF;
+  font-weight: 700;
+  font-size: 14px;
+  border-bottom: 24px;
+  /* text-decoration: underline; */
+}
+h4{
+  font-size: 24px;
+  font-weight: 400;
+  border-block-end: 0px;
+  /* display: inline; */
+  margin-block-start:40px;
+}
