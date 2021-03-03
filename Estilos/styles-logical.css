@@ -1,37 +1,13 @@
-/* @font-face{
-  font-family: charter;
-  src: url('../fonts/charter-regular.otf');
-  font-style: normal;
-  font-weight: 400;
-}
-
-@font-face{
-  font-family: charter;
-  src: url('../fonts/charter-italic.otf');
-  font-style: italic;
-  font-weight: 400;
-}
-
-@font-face{
-  font-family: charter;
-  src: url('../fonts/charter-bold.otf');
-  font-style: normal;
-  font-weight: 700;
-}
-
-@font-face{
-  font-family: charter;
-  src: url('../fonts/charter-bold-italic.otf');
-  font-style: italic;
-  font-weight: bold;
-} */
-
 
 h1{
   font-weight: normal;
   margin-block-start: 64px;
   margin-block-end: 16px;
   display: inline-block;
+  /* font-size: 10px; */
+}
+.titulo{
+  font-size: 10px;
 }
 
 
@@ -41,7 +17,7 @@ h1{
   --white10: #3A3539;
     font-size: 62.5%;
     font-family: 'Nunito', sans-serif;
-    /* font-family: 'Roboto', sans-serif; */
+    scroll-behavior: smooth;
   }
 
   details{
@@ -54,12 +30,12 @@ h1{
   color: white;
   font-family: 'Nunito', sans-serif;
 }
-header a{
+ a{
   color: var(--white20);
   text-decoration: none;
 }
 header a:hover{
-  color:var(--gris30)
+  color:var(--gris30)header
 }
 
 .titulo {
@@ -78,7 +54,6 @@ p {
 
 h2{
   font-size: 4rem;
-  /* text-decoration: none; */
   font-weight: bold;
   margin-block-end: 40px;
 }
@@ -88,15 +63,6 @@ h3 {
   text-decoration: none;
   font-weight: 600;
 }
-
-/* .imagenDom {
-  width: 500px;
-  height: 300px;
-}
-.imagenCss {
-  width: 500px;
-  height: 300px;
-} */
 
 pre{
   background-color: var(--white10);
@@ -108,9 +74,8 @@ pre{
 }
 
 .hero{
-  height: 350px;
+  block-size: 50px;
   background: linear-gradient(96.07deg, #314755 30.63%, #26A0DA 102.18%);
-  /* background-image:linear-gradient(to top, rgba(255, 255, 255, .3), transparent), url('../imagenes/patron-1.png'); */
   width: 100%;
   position: relative;
 }
@@ -125,13 +90,6 @@ pre{
 
 h3::before{
   content: counter(titleList) '. ';
-}
-/* h3::after{
-  content: '';
-  width: 32px;
-  height: 4px;
-  background: #424242;
-  display: inline-block; */
 }
 
 h3 a {
@@ -150,7 +108,6 @@ blockquote{
   padding-inline-start: 24px;
   padding-block-start: 24px;
   padding-block-end: 24px;
-  /* display: block; */
   padding-inline-end: 24px;
   line-height: 32px;
   font-size: 24px;
@@ -159,26 +116,14 @@ details li{
   color: var(--white20);
 }
 
-
 .wrapper{
-  /* border: 1px solid red; */
   max-inline-size: 902px;
   margin: auto;
-
-}
-.main{
-  /* border: 1px solid yellow; */
 }
 .main-content{
-  /* display: inline-block; */
-  inline-size: 636px;
-  /* border: 1px solid green; */
+  margin-inline-end: 20px;
   padding: 16px;
-  margin-inline-start: 133px;
-  /* margin-inline-end: */
-}
-main{
-  /* border: 1px solid red; */
+
 }
 img{
   max-inline-size: 100%;
@@ -196,47 +141,24 @@ li{
 }
 blockquote p{
   font-size: 2.4rem;
-  /* border-radius: 8px; */
   color: #FFFFFF;
-  /* display: block; */
   margin-block-start: 0px;
   margin-block-end: 0px;
 }
 blockquote p span::before {
   content: '- ';
-  /* display: block; */
 }
 blockquote p span{
   margin-block-start: 16px;
   display: block;
-  /* border: 1px solid red; */
 }
-/* header{
-  position: relative;
-} */
 
-
-nav{
-  /* position: fixed;
-  left: 177px;
-  top: 100px; */
-  /* inline-size: 177px; */
-}
-.header-content{
-  position: relative;
-}
 .header-postion{
-  position: sticky;
-  top:0px;
+
 }
 header{
- /* color: #FFFFFF */
- /* display: inline-block;
- top:0px; */
- margin-block-start: 64px;
- position: absolute;
- inline-size: 188px;
-inset-inline-start: 200px;
+  margin-block-start: 20px;
+  margin-inline: 20px;
 }
 header li{
   margin-block-start: 16px;
@@ -246,7 +168,6 @@ header li{
   font-weight: 700;
   font-size: 14px;
   border-bottom: 24px;
-  /* text-decoration: underline; */
 }
 h4{
   font-size: 24px;
@@ -254,4 +175,53 @@ h4{
   border-block-end: 0px;
   /* display: inline; */
   margin-block-start:40px;
+}
+.form input{
+  display: block;
+  inline-size: 100%;
+  height: 48px;
+  border-radius: 8px;
+  background-color: #251F24;
+  box-sizing: border-box;
+  border: 1px solid white;
+  margin-block-end: 24px;
+  padding-block: 12px;
+  padding-inline: 16px;
+  color: white;
+  font-size: 16px;
+}
+h5{
+  font-size: 24px;
+  margin-block-end: 14px;
+  font-weight: 400;
+}
+
+.form input::-webkit-input-placeholder {
+  color: var(--white20);
+}
+
+.form input[type="submit"]{
+  background-color: #157EFB;
+  border: none;
+}
+pre{
+  overflow: auto;
+}
+
+@media screen and (min-width: 1600px){
+  .header-postion{
+    position: sticky;
+    inset-block-start: -45px;
+  }
+  header{
+   margin-block-start: 64px;
+   position: absolute;
+   inline-size: 188px;
+   inset-inline-start: 160px;
+    margin-inline: 0px;
+  }
+  .hero{
+    block-size: 350px;
+  }
+
 }
